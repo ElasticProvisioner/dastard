@@ -249,7 +249,7 @@ func generateData(Nchan, firstchanOffset int, packetchan chan []byte, cancel cha
 }
 
 // udpwriter is called once per data source (i.e., per UDP port producing data)
-func udpwriter(host str, portnum int, packetchan chan []byte) error {
+func udpwriter(host string, portnum int, packetchan chan []byte) error {
 	hostname := fmt.Sprintf("%s:%d", host, portnum)
 	addr, err := net.ResolveUDPAddr("udp", hostname)
 	if err != nil {
