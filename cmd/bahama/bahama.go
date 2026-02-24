@@ -299,7 +299,7 @@ func main() {
 	changaps := flag.Int("gaps", 0, "How many channel numbers to skip between groups (relevant only if ngroups>1 or nsource>1)")
 	ngroups := flag.Int("ngroups", 1, "Number of channel groups per source, (1-Nchan/4) allowed")
 	port := flag.Int("port", 4000, "UDP port to produce data")
-	host := flag.String("host", "0.0.0.0", "Hostname or IP address to bind to")
+	host := flag.String("host", "localhost", "Hostname or IP address to bind to")
 	samplerate := flag.Float64("rate", 200000., "Samples per channel per second, 1000-500000")
 	noiselevel := flag.Float64("noise", 0.0, "White noise level (<=0 means no noise)")
 	usesawtooth := flag.Bool("saw", false, "Whether to add a sawtooth pattern")
