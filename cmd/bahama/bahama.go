@@ -39,7 +39,7 @@ type BahamaControl struct {
 func (control *BahamaControl) Report() {
 	fmt.Println("Samples per second:       ", control.samplerate)
 	fmt.Printf("Drop packets randomly:     %.2f%%\n", 100.0*control.dropfrac)
-	fmt.Printf("Generating UDP packets on %s:%d%%\n", control.host, control.port)
+	fmt.Printf("Generating UDP packets on %s:%d\n", control.host, control.port)
 	fmt.Println("Number of UDP sources:    ", control.Nsources)
 	fmt.Println("Channels per UDP source:  ", control.Nchan)
 	fmt.Println("Channel groups per UDP:   ", control.Ngroups)
